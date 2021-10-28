@@ -59,6 +59,7 @@ main {
 }
 .stats p:first-child {
     color: var(--w);
+    font-family: "Inter";
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.3rem;
@@ -67,8 +68,50 @@ main {
     color: var(--stwb);
 }
 
-@media (min-width:800px) {
-    body {
-  background-color: red;
-}
+@media (min-width:1440px) {
+   main {
+    width: 70%;
+    height: 30rem;
+    margin: auto;
+    background-color: var(--ddb);
+    border-radius: 0.5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+    
+  #img-div {
+    flex-basis: 50%;
+    order: 2;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+    background-image: linear-gradient(to right, rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url(images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+    
+  #main-text {
+    margin: 0 0 0 1rem;
+    text-align: left;
+    flex-basis: 42%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+   
+  #header-text p {
+    margin-top: 2rem;
+  }    
+    
+  #header-text h1 {
+    font-size: 2.2rem;
+  } 
+    
+  #stats-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
 }
